@@ -6,3 +6,18 @@ tellraw @a [{"color":"gray","italic":true,"text":"v0.1 for 1.21.4 by "},{"color"
 
 execute at @r run worldborder center ~ ~
 worldborder set 10
+
+scoreboard objectives add _game_info dummy
+scoreboard objectives add _constant dummy
+scoreboard objectives add paired dummy
+
+scoreboard players set game_running _game_info 0
+
+# 5 mins = 6000 ticks
+scoreboard players set swap_countdown _game_info 6000
+
+scoreboard players set 0 _constant 0
+
+scoreboard players set * paired 0
+
+tag @a remove paired
