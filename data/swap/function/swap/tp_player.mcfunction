@@ -1,0 +1,1 @@
+$tp @a[limit=1,scores={_player_number=$(s_playerInt1)}] @a[limit=1,scores={_player_number=$(s_playerInt2)}]
