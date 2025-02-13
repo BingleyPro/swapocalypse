@@ -1,17 +1,4 @@
-# Display title
-function swap:title
-
-# Start button
-tellraw @a[tag=op] {"clickEvent":{"action":"run_command","value":"/function swap:start"},"color":"gold","hoverEvent":{"action":"show_text","value":[{"text":"Click to begin!","color":"green"}]},"text":"[Start]"}
-
-tellraw @a[tag=!op] {"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"You don't have permission to start the game!","color":"red"}]},"text":"[Start]"}
-
-tellraw @a ""
-
-# Worldborder size
-tellraw @a[tag=op] [{"color":"gold","text":"Worldborder Size: "},{"bold":true,"clickEvent":{"action":"run_command","value":"/function swap:settings/decrease_wb_size"},"color":"red","text":"< "},{"hoverEvent":{"action":"show_text","value":[{"text":"Click to set exact value","color":"green"}]},"nbt":"wb-size","storage":"swap:settings"},{"bold":true,"clickEvent":{"action":"run_command","value":"/function swap:settings/increase_wb_size"},"color":"green","text":" >"}]
-
-tellraw @a[tag=!op] [{"color":"gray","text":"Worldborder Size: "},{"bold":true,"color":"gray","text":"< "},{"nbt":"wb-size","storage":"swap:settings"},{"bold":true,"color":"gray","text":" >"}]
+function swap:settings/show_settings
 
 # Setup worldborder
 execute at @r run worldborder center ~ ~
@@ -29,7 +16,12 @@ scoreboard players set swap_countdown _game_info 6000
 
 scoreboard players set 0 _constant 0
 scoreboard players set 1 _constant 1
-scoreboard players set 100 _constant 100
+scoreboard players set 500 _constant 500
+scoreboard players set 1000 _constant 1000
+scoreboard players set 1500 _constant 1500
+scoreboard players set 2000 _constant 2000
+scoreboard players set 20000 _constant 20000
+scoreboard players set 200000 _constant 200000
 
 scoreboard players reset * _player_number
 
