@@ -1,5 +1,12 @@
 # Display main title
-tellraw @a "\n\n\n\n\n\n\n\n\n\n\n\n"
-tellraw @a [{"color":"#E02951","text":"-"},{"color":"#D3264C","text":"-"},{"color":"#C52446","text":"- "},{"color":"#B82141","text":"D"},{"color":"#AB1E3B","text":"e"},{"color":"#9E1B36","text":"a"},{"color":"#901931","text":"t"},{"color":"#83162B","text":"h "},{"color":"#761326","text":"S"},{"color":"#691020","text":"w"},{"color":"#5B0E1B","text":"a"},{"color":"#4E0B16","text":"p "},{"color":"#410810","text":"-"},{"color":"#34050B","text":"-"},{"color":"#190000","text":"-"}]
+function swap:title
 
-tellraw @a [{"color":"gray","italic":true,"text":"v0.1 for 1.21.4 by "},{"color":"#FF930F","text":"B"},{"color":"#FFA21A","text":"i"},{"color":"#FFB025","text":"n"},{"color":"#FFBF30","text":"g"},{"color":"#FFCD3A","text":"l"},{"color":"#FFDC45","text":"e"},{"color":"#FFF95B","text":"y"}]
+# Display new game prompt for ops
+tellraw @a[tag=op] {"clickEvent":{"action":"run_command","value":"/function swap:new_game"},"color":"gold","hoverEvent":{"action":"show_text","value":[{"text":"Will end any currently running game!","color":"red"}]},"text":"[New Game]"}
+
+# And for non-ops
+tellraw @a[tag=!op] {"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Only operators can create a new game - if you are an operator run '/tag @s add op'","color":"red"}]},"text":"[New Game]"}
+
+execute unless data storage swap:settings preset run function swap:settings/reset_settings
+
+gamerule sendCommandFeedback false

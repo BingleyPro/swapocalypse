@@ -25,7 +25,14 @@ gamerule doVinesSpread true
 
 effect clear @a
 
-# Setup the world border
-worldborder set 3000
+# Spread all players
+tag @a remove center
+tag @r add center
 
-# Spread All Players
+execute as @a[tag=center] run worldborder center ~ ~
+worldborder set 5000
+
+execute as @a[tag=center] run spreadplayers ~ ~ 100 2000 false @a
+execute as @a at @s run forceload add ~ ~
+
+tag @a remove center
