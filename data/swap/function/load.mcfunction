@@ -1,4 +1,4 @@
-# Display title
+# Display main title
 tellraw @a "\n\n\n\n\n\n\n\n\n\n\n\n"
 tellraw @a [{"color":"#E02951","text":"-"},{"color":"#D3264C","text":"-"},{"color":"#C52446","text":"- "},{"color":"#B82141","text":"D"},{"color":"#AB1E3B","text":"e"},{"color":"#9E1B36","text":"a"},{"color":"#901931","text":"t"},{"color":"#83162B","text":"h "},{"color":"#761326","text":"S"},{"color":"#691020","text":"w"},{"color":"#5B0E1B","text":"a"},{"color":"#4E0B16","text":"p "},{"color":"#410810","text":"-"},{"color":"#34050B","text":"-"},{"color":"#190000","text":"-"}]
 
