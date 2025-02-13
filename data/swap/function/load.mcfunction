@@ -34,3 +34,5 @@ effect give @a regeneration infinite 255 true
 effect give @a water_breathing infinite 255 true
 
 gamemode survival @a
+
+function swap:debug
