@@ -9,4 +9,4 @@ tellraw @a[tag=!op] {"color":"gray","hoverEvent":{"action":"show_text","value":[
 
 execute unless data storage swap:settings preset run function swap:settings/reset_settings
 
-gamerule sendCommandFeedback false
+#gamerule sendCommandFeedback false

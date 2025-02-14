@@ -1,0 +1,1 @@
+$tp @a[limit=1,scores={_player_number=$(s_playerInt1)}] $(player0PosX) $(player0PosY) $(player0PosZ)

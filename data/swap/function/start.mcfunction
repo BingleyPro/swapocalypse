@@ -2,7 +2,7 @@
 
 # Get the number of the players
 scoreboard players set player_count _game_info 0
-execute as @a[tag=player] run scoreboard players add player_count _game_info 1
+execute as @a run scoreboard players add player_count _game_info 1
 
 # Assign a number to each player
 scoreboard players set _player_index _game_info 1
@@ -33,6 +33,5 @@ execute as @a[tag=center] run worldborder center ~ ~
 worldborder set 5000
 
 execute as @a[tag=center] run spreadplayers ~ ~ 100 2000 false @a
-execute as @a at @s run forceload add ~ ~
 
 tag @a remove center
