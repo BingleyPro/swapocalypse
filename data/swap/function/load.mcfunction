@@ -1,3 +1,5 @@
+# load.mcfunction runs on /reload
+
 # Display main title
 function swap:title
 
@@ -7,6 +9,7 @@ tellraw @a[tag=op] {"clickEvent":{"action":"run_command","value":"/function swap
 # And for non-ops
 tellraw @a[tag=!op] {"color":"gray","hoverEvent":{"action":"show_text","value":[{"text":"Only operators can create a new game - if you are an operator run '/tag @s add op'","color":"red"}]},"text":"[New Game]"}
 
+# Setup settings if they don't already exist
 execute unless data storage swap:settings preset run function swap:settings/reset_settings
 
 #gamerule sendCommandFeedback false
