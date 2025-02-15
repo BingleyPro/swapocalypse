@@ -71,7 +71,7 @@ tag @a remove center
 tag @r add center
 execute as @a[tag=center] run worldborder center ~ ~
 execute as @a[tag=center] run tp @a @s
-execute as @a[tag=center] run spreadplayers ~ ~ 2 15 false @a[tag=!center]
+execute as @a[tag=center] run spreadplayers ~ ~ 2 10 false @a[tag=!center]
 tag @a remove center
 
 # Set the players' spawnpoints

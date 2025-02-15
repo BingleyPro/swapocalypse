@@ -1,1 +1,3 @@
-execute store result storage swap:settings wb-size int 1 run scoreboard players get _settings_temp _game_info
+execute store result storage swap:settings wb-size int 1 run scoreboard players get _input_value _settings
+
+function swap:settings/show_settings
