@@ -1,5 +1,7 @@
 function swap:settings/show_settings
 
+scoreboard players set game_running _game_info 0
+
 # Setup worldborder
 execute at @r run worldborder center ~ ~
 worldborder set 15
@@ -8,8 +10,8 @@ worldborder set 15
 scoreboard objectives add _game_info dummy
 scoreboard objectives add _constant dummy
 scoreboard objectives add _player_number dummy
-
-scoreboard players set game_running _game_info 0
+scoreboard objectives add _deaths deathCount
+scoreboard objectives add _online dummy
 
 # 5 mins = 6000 ticks
 scoreboard players set swap_countdown _game_info 6000
@@ -22,6 +24,8 @@ scoreboard players set 1500 _constant 1500
 scoreboard players set 2000 _constant 2000
 scoreboard players set 20000 _constant 20000
 scoreboard players set 200000 _constant 200000
+
+scoreboard players set final_player_count _game_info -1
 
 scoreboard players reset * _player_number
 
@@ -61,6 +65,7 @@ worldborder set 40
 tag @a remove center
 tag @r add center
 execute as @a[tag=center] run worldborder center ~ ~
+execute as @a[tag=center] run tp @a @s
 execute as @a[tag=center] run spreadplayers ~ ~ 2 15 false @a[tag=!center]
 tag @a remove center
 
@@ -70,4 +75,4 @@ execute as @a at @s run spawnpoint @s ~ ~ ~
 # Allow players to jump
 execute as @a run attribute @s jump_strength base set 0.42
 
-gamemode survival @a
+gamemode survival @a[tag=!spectator]
