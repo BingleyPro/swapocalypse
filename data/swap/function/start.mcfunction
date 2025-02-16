@@ -29,7 +29,7 @@ gamerule doVinesSpread true
 effect clear @a
 
 # Set the worldborder
-worldborder set 5000
+function swap:start/set_worldborder with storage swap:settings
 
 # Spread all players
 tag @a remove center

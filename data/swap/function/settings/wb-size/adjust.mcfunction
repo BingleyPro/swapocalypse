@@ -1,8 +1,8 @@
 # Get the type of input change (decrease (1), increase (2))
 $scoreboard players set _input_type _settings $(input_change)
 
-# Retrieve the current wb-size into _settings_temp
-execute store result score _settings_temp _game_info run data get storage swap:settings wb-size
+# Retrieve the current wb_size into _settings_temp
+execute store result score _settings_temp _game_info run data get storage swap:settings wb_size
 
 scoreboard players set _step_size _settings 100
 
@@ -39,7 +39,7 @@ execute if score _settings_temp _game_info < 100 _constant run scoreboard player
 execute if score _settings_temp _game_info > 1000000 _constant run scoreboard players set _settings_temp _game_info 1000000
 
 # Save the new value to storage
-execute store result storage swap:settings wb-size int 1 run scoreboard players get _settings_temp _game_info
+execute store result storage swap:settings wb_size int 1 run scoreboard players get _settings_temp _game_info
 
 # Play a sound
 execute at @a[tag=op] run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1

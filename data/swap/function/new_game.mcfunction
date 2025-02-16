@@ -19,12 +19,14 @@ scoreboard players set swap_countdown _game_info 6000
 # Setup constant values
 scoreboard players set 0 _constant 0
 scoreboard players set 1 _constant 1
+scoreboard players set 20 _constant 20
 scoreboard players set 100 _constant 100
 scoreboard players set 200 _constant 200
 scoreboard players set 500 _constant 500
 scoreboard players set 1000 _constant 1000
 scoreboard players set 1500 _constant 1500
 scoreboard players set 2000 _constant 2000
+scoreboard players set 10000 _constant 10000
 scoreboard players set 20000 _constant 20000
 scoreboard players set 200000 _constant 200000
 scoreboard players set 1000000 _constant 1000000
@@ -79,8 +81,9 @@ tag @a remove center
 # Set the players' spawnpoints
 execute as @a at @s run spawnpoint @s ~ ~ ~
 
-# Allow players to jump
+# Reset player attributes
 execute as @a run attribute @s jump_strength base set 0.42
+execute as @a run attribute @s max_health base set 20
 
 # Set all non-spectators to survival
 gamemode survival @a[tag=!spectator]
