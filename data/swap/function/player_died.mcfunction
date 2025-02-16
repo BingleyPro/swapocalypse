@@ -1,7 +1,7 @@
-tag @a[scores={_deaths=1..},tag=player] add spectator
-tag @a[scores={_deaths=1..},tag=player] remove player
+$tag @a[scores={_deaths=$(max_deaths)..},tag=player] add spectator
+$tag @a[scores={_deaths=$(max_deaths)..},tag=player] remove player
 
-scoreboard players set @a[scores={_deaths=1..},tag=spectator] _deaths 0
+$scoreboard players set @a[scores={_deaths=$(max_deaths)..},tag=spectator] _deaths 0
 
 # Get the number of the players
 scoreboard players set player_count _game_info 0

@@ -11,14 +11,15 @@ scoreboard objectives add _player_number dummy
 scoreboard objectives add _deaths deathCount
 scoreboard objectives add _online dummy
 scoreboard objectives add _settings dummy
+scoreboard objectives add _active_settings dummy
 scoreboard objectives add input trigger
-
-# 5 mins = 6000 ticks
-scoreboard players set swap_countdown _game_info 6000
 
 # Setup constant values
 scoreboard players set 0 _constant 0
 scoreboard players set 1 _constant 1
+scoreboard players set 2 _constant 2
+scoreboard players set 7 _constant 7
+scoreboard players set 10 _constant 10
 scoreboard players set 20 _constant 20
 scoreboard players set 100 _constant 100
 scoreboard players set 200 _constant 200

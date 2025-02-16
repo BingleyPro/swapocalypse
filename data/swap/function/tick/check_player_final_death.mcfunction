@@ -1,0 +1,1 @@
+$execute as @a[scores={_deaths=$(max_deaths)..},tag=player] run function swap:player_died with storage swap:settings

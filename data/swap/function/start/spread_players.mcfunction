@@ -1,0 +1,1 @@
+$execute as @a[tag=center] run spreadplayers ~ ~ $(spread_distance) $(max_range) false @a[tag=!spectator]
