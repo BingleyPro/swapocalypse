@@ -41,5 +41,8 @@ execute if score _settings_temp _game_info > 1000000 _constant run scoreboard pl
 # Save the new value to storage
 execute store result storage swap:settings wb-size int 1 run scoreboard players get _settings_temp _game_info
 
+# Play a sound
+execute at @a[tag=op] run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1
+
 # Show settings
 function swap:settings/show_settings

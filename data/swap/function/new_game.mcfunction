@@ -11,6 +11,7 @@ scoreboard objectives add _player_number dummy
 scoreboard objectives add _deaths deathCount
 scoreboard objectives add _online dummy
 scoreboard objectives add _settings dummy
+scoreboard objectives add input trigger
 
 # 5 mins = 6000 ticks
 scoreboard players set swap_countdown _game_info 6000
@@ -19,6 +20,7 @@ scoreboard players set swap_countdown _game_info 6000
 scoreboard players set 0 _constant 0
 scoreboard players set 1 _constant 1
 scoreboard players set 100 _constant 100
+scoreboard players set 200 _constant 200
 scoreboard players set 500 _constant 500
 scoreboard players set 1000 _constant 1000
 scoreboard players set 1500 _constant 1500
@@ -82,3 +84,6 @@ execute as @a run attribute @s jump_strength base set 0.42
 
 # Set all non-spectators to survival
 gamemode survival @a[tag=!spectator]
+
+# Play sound
+execute at @a[tag=op] run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.7 1
