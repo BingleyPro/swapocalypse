@@ -72,6 +72,8 @@ execute store result storage swap:settings max_range int 1 run scoreboard player
 scoreboard players operation min_distance _settings = _settings_temp _settings
 scoreboard players operation min_distance _settings /= final_player_count _game_info
 
+execute store result storage swap:settings spread_distance int 1 run scoreboard players get min_distance _settings
+
 # Tag a random player as center
 tag @a remove center
 tag @r add center
