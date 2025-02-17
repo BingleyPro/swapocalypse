@@ -34,3 +34,5 @@ effect give @a saturation infinite 255 true
 effect give @a regeneration infinite 255 true
 effect give @a water_breathing infinite 255 true
 effect give @a night_vision infinite 255 true
+
+tag @a remove spectator

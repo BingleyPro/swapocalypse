@@ -4,6 +4,8 @@ function swap:settings/show_settings
 # Make sure the game isn't running
 scoreboard players set game_running _game_info 0
 
+scoreboard players set _awaiting_input _settings 0
+
 # Setup scoreboards
 scoreboard objectives add _game_info dummy
 scoreboard objectives add _constant dummy
@@ -19,8 +21,10 @@ scoreboard players set 0 _constant 0
 scoreboard players set 1 _constant 1
 scoreboard players set 2 _constant 2
 scoreboard players set 7 _constant 7
+scoreboard players set 9 _constant 9
 scoreboard players set 10 _constant 10
 scoreboard players set 20 _constant 20
+scoreboard players set 60 _constant 60
 scoreboard players set 100 _constant 100
 scoreboard players set 200 _constant 200
 scoreboard players set 500 _constant 500
@@ -71,12 +75,12 @@ effect give @a regeneration infinite 255 true
 effect give @a water_breathing infinite 255 true
 
 # Setup the world border
-worldborder set 20
+worldborder set 30
 tag @a remove center
 tag @r add center
-execute as @a[tag=center] run worldborder center ~ ~
-execute as @a[tag=center] run tp @a @s
-execute as @a[tag=center] run spreadplayers ~ ~ 2 10 false @a[tag=!center]
+execute as @a[tag=center] at @s run worldborder center ~ ~
+execute as @a[tag=center] at @s run tp @a @s
+execute as @a[tag=center] at @s run spreadplayers ~ ~ 2 10 false @a[tag=!center]
 tag @a remove center
 
 # Set the players' spawnpoints
@@ -88,6 +92,9 @@ execute as @a run attribute @s max_health base set 20
 
 # Set all non-spectators to survival
 gamemode survival @a[tag=!spectator]
+
+# Clear actionbar
+title @a actionbar [{"text":""}]
 
 # Play sound
 execute at @a[tag=op] run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.7 1

@@ -6,6 +6,8 @@ scoreboard players enable @a[tag=op] input
 scoreboard players set @a input 0
 
 # Display instructions
+tellraw @a[tag=op] [{"color":"red","text":"Your input is invalid! Please enter a valid number."}]
+tellraw @a[tag=op] ""
 tellraw @a[tag=op] [{"color":"aqua","text":"Run the command "},{"color":"gold","text":"/trigger input set [new worldborder size]"},{"color":"aqua","text":" !"}]
 tellraw @a[tag=op] ""
 tellraw @a[tag=op] [{"color":"gold","text":"The valid range is "},{"color":"red","text":"1 - 1,000,000,000"},", but it's recommended to go between ",{"color":"red","text":"100 - 1,000,000"}]

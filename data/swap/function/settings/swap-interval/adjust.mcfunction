@@ -14,7 +14,7 @@ execute if score _input_type _settings matches 2 if score _settings_temp _game_i
 
 # Distinct step sizes for decreasing (1)
 execute if score _input_type _settings matches 1 if score _settings_temp _game_info matches 21..100 run scoreboard players set _step_size _settings 10
-execute if score _input_type _settings matches 1 if score _settings_temp _game_info matches 101..400 run scoreboard players set _step_size _settings 50
+execute if score _input_type _settings matches 1 if score _settings_temp _game_info matches 101..500 run scoreboard players set _step_size _settings 50
 execute if score _input_type _settings matches 1 if score _settings_temp _game_info matches 501..1000 run scoreboard players set _step_size _settings 100
 execute if score _input_type _settings matches 1 if score _settings_temp _game_info matches 1001..10000 run scoreboard players set _step_size _settings 500
 
