@@ -8,7 +8,8 @@
 
 - Unlimited players
 - Customizable swap timer
-- Range of settings
+- Wide range of configurable settings
+- True randomness with [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) for unpredictable swaps
 
 ## Settings  
 
@@ -27,4 +28,4 @@
 
 ## Install
 
-You can download the latest version of **Swapocalypse** through (Modrinth)[https://modrinth.com/project/swapocalypse]
+You can download the latest version of **Swapocalypse** through [Modrinth](https://modrinth.com/project/swapocalypse).
