@@ -21,6 +21,7 @@ scoreboard players set 0 _constant 0
 scoreboard players set 1 _constant 1
 scoreboard players set 2 _constant 2
 scoreboard players set 7 _constant 7
+scoreboard players set 8 _constant 8
 scoreboard players set 9 _constant 9
 scoreboard players set 10 _constant 10
 scoreboard players set 20 _constant 20
