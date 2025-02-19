@@ -22,7 +22,7 @@
 | **Nether Travel**     | Allows players to enter the Nether.       | `true` / `false`              | *(User preference)* |
 | **Swap Interval**     | Time (in seconds) between swaps.          | **10 – 50,000**                     | `20 – 10,000` |
 | **Swap Announcement** | Alerts before swapping.                   | `Never`, `5-Second Countdown`         | *(User preference)* |
-| **Timer Display**     | How the swap timer appears.               | `No Display`, `Show in Actionbar`               | *(User preference)* |
+| **Timer Display**     | How the game timer appears.               | `No Display`, `Show in Actionbar`               | *(User preference)* |
 | **Max Health**        | Sets player health limit.                 | **1 – 1024**                        | `1 – 100`   |
 | **Hunger**            | Enables or disables hunger mechanics.     | `true` / `false`              | `true` |
 
@@ -34,4 +34,5 @@ You can download the latest version of **Swapocalypse** through [Modrinth](https
 > These features may be added in future updates, however they are not guaranteed.
 - Detect players sitting on the death screen after a non-elimination death (planned)
 - Easier way to switch between spectator and player (planned)
+- Swap players at a random time range (e.g every 3 - 5 minutes) (planned)
 - Teams mode (planned)
