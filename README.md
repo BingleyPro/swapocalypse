@@ -36,3 +36,4 @@ You can download the latest version of **Swapocalypse** through [Modrinth](https
 - Easier way to switch between spectator and player (planned)
 - Swap players at a random time range (e.g every 3 - 5 minutes) (planned)
 - Teams mode (planned)
+- Make a Wiki (planned - select the Wiki tab at the top!)
