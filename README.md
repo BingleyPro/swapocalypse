@@ -29,3 +29,9 @@
 ## Install
 
 You can download the latest version of **Swapocalypse** through [Modrinth](https://modrinth.com/project/swapocalypse).
+
+## Roadmap
+> These features may be added in future updates, however they are not guaranteed.
+- Detect players sitting on the death screen after a non-elimination death (planned)
+- Easier way to switch between spectator and player (planned)
+- Teams mode (planned)
