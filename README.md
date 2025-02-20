@@ -28,10 +28,10 @@
 
 ## Install
 
-You can download the latest version of **Swapocalypse** through [Modrinth](https://modrinth.com/project/swapocalypse).
+You can download the latest version of **Swapocalypse** through [Modrinth](https://modrinth.com/project/swapocalypse). There are two versions: the datapack version, which you need to install manually in each world, and the mod version, which is just a repackaged datapack that will run in each world in the instance automatically. The functions of both are identical.
 
 ## Roadmap
-> These features may be added in future updates, however they are not guaranteed.
+> These features may be added in future updates, however they are not guaranteed. Bug fixes are generally prioritised over these.
 - Detect players sitting on the death screen after a non-elimination death (planned)
 - Easier way to switch between spectator and player (planned)
 - Swap players at a random time range (e.g every 3 - 5 minutes) (planned)
