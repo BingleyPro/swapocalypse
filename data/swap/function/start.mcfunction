@@ -6,6 +6,8 @@ execute as @a[tag=!spectator] run scoreboard players add player_count _game_info
 
 execute store result score final_player_count _game_info run scoreboard players get player_count _game_info
 
+execute if score final_player_count _game_info matches 1 run return run function swap:settings/show_settings
+
 # Assign a unique number or tag to each player
 scoreboard players set _player_index _game_info 1
 execute if score player_count _game_info >= _player_index _game_info run function swap:setup_player
