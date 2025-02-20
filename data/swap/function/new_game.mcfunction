@@ -1,6 +1,3 @@
-# Show the settings menu
-function swap:settings/show_settings
-
 # Make sure the game isn't running
 scoreboard players set game_running _game_info 0
 
@@ -99,3 +96,6 @@ title @a actionbar [{"text":""}]
 
 # Play sound
 execute at @a[tag=op] run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.7 1
+
+# Show the settings menu
+function swap:settings/show_settings
