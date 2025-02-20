@@ -15,7 +15,7 @@ execute if score player_count _game_info >= _player_index _game_info run functio
 execute store result score swap_countdown _game_info run data get storage swap:settings swap_interval
 scoreboard players operation swap_countdown _game_info *= 20 _constant
 
-execute store result storage swap:settings swap_intervalt int 1 run scoreboard players get swap_countdown _game_info
+execute store result storage swap:settings swap_interval int 1 run scoreboard players get swap_countdown _game_info
 
 scoreboard players set _awaiting_input _settings 0
 
