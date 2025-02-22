@@ -12,4 +12,6 @@ tellraw @a[tag=!op] {"color":"gray","hoverEvent":{"action":"show_text","value":[
 # Setup settings if they don't already exist
 execute unless data storage swap:settings wb_size run function swap:settings/reset_settings
 
+scoreboard objectives add joined dummy
+
 gamerule sendCommandFeedback false

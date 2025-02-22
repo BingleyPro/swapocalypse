@@ -48,6 +48,9 @@ tag @a remove player
 # Revoke advancements
 advancement revoke @a everything
 
+# Reset "joined" for all players
+scoreboard players set @a joined 0
+
 # Set gamerules to false
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
@@ -80,6 +83,7 @@ tag @r add center
 execute as @a[tag=center] at @s run worldborder center ~ ~
 execute as @a[tag=center] at @s run tp @a @s
 execute as @a[tag=center] at @s run spreadplayers ~ ~ 2 10 false @a[tag=!center]
+execute as @a[tag=center] at @s run setworldspawn ~ ~ ~
 tag @a remove center
 
 # Set the players' spawnpoints

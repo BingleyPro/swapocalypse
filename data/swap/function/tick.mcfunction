@@ -1,5 +1,8 @@
 # tick.mcfunction runs every game tick
 
+# Check for new players
+execute as @a unless score @s joined matches 1 run function swap:tick/handle_new_player
+
 # Set the gamemode of players/spectators
 gamemode spectator @a[tag=spectator,tag=!dev]
 gamemode survival @a[tag=!spectator,tag=!dev]
