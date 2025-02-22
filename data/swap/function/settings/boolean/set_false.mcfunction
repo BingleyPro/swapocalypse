@@ -1,6 +1,5 @@
 $data modify storage swap:settings $(id) set value 0
 
-# Play a sound
-execute at @a[tag=op] run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1
+function swap:sounds/ui_click1
 
 function swap:settings/show_settings

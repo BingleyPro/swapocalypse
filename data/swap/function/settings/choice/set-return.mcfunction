@@ -1,4 +1,4 @@
-$data modify storage swap:settings $(id) set value 1
+$data modify storage swap:settings $(choice) set value $(set)
 
 function swap:sounds/ui_click1
 

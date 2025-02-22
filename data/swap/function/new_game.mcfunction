@@ -14,6 +14,7 @@ scoreboard objectives add _active_settings dummy
 scoreboard objectives add input trigger
 
 # Setup constant values
+# 20, 10, 8, 2 , 1
 scoreboard players set 0 _constant 0
 scoreboard players set 1 _constant 1
 scoreboard players set 2 _constant 2

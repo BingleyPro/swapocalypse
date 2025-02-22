@@ -1,6 +1,10 @@
 {
     "pack": {
-        "description": "A new gamemode for Minecraft!",
-        "pack_format": 61
+        "description": "A Minecraft datapack that implements a custom Death Swap gamemode!",
+        "pack_format": 61,
+        "supported_formats": {
+            "min_inclusive": 48,
+            "max_inclusive": 61
+        }
     }
 }
