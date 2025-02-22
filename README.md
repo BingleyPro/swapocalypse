@@ -37,3 +37,4 @@ You can download the latest version of **Swapocalypse** through [Modrinth](https
 - Swap players at a random time range (e.g every 3 - 5 minutes) (planned)
 - Teams mode (planned)
 - Make a Wiki (planned - select the Wiki tab at the top!)
+- Port to versions 1.20.2 and later
