@@ -1,1 +1,1 @@
-$scoreboard players set swap_countdown _game_info $(swap_intervalt)
+$scoreboard players set swap_countdown _game_info $(swap_interval)
